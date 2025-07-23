@@ -60,3 +60,9 @@ tech_test_django/
 ├── requirements.txt
 ├── .env.example
 └── README.md (este archivo)
+
+Características destacadas
+
+•Middleware de auditoría
+•Validación de email único
+•Auto-cálculo de fechas en ingresos

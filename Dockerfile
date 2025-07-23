@@ -1,5 +1,5 @@
 # Usa Python 3.10
-FROM python:3.10-slim
+FROM python:3.10
 
 # Instalamos pg_isready y sus dependencias
 RUN apt-get update \
@@ -24,4 +24,4 @@ RUN chmod +x /entrypoint.sh
 
 # Arranque
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["gunicorn", "tech_test_django.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
